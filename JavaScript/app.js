@@ -22,8 +22,8 @@ calculateButton.addEventListener('click', () => {
     let minutes60String = minutes60.toString(10);
     let len02 = minutes60String.length;
     if (len02 == 1) {
-        finalAnswer.innerText = (heures + " H 0" + minutes60String);
+        finalAnswer.innerText = (heures + " : 0" + minutes60String);
     } else {
-        finalAnswer.innerText = (heures + " H " + minutes60String);
+        finalAnswer.innerText = (heures + " : " + minutes60String);
     }
 });
