@@ -4,6 +4,12 @@ const calculateButton = document.querySelector("#calculateButton");
 
 const finalAnswer = document.querySelector('#finalAnswer');
 
+timeInput.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        calculateButton.click();
+    }
+});
+
 calculateButton.addEventListener('click', () => {
     let totalTime = timeInput.value;
     let timeSplit = totalTime.split(".");
